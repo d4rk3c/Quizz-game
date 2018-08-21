@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Darko Radojevic">
+    <title>Kviz licnosti</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body background="./images/poster.jpg">
+    <!-- definisanje glavnog kontejnera main-->
+    <div class="main-container">
+        <!-- definisanje kontejnera igraca br 1-->
+        <div id="player-0" class="container">
+            <div class="p0img">
+                <img src="./images/p0.jpg" alt="Player1" class="p0img">
+            </div>
+            <div class="score-container">
+                <div class="label-score" id="label-score0">POENI P1</div>
+                <div id="score-0" class="score-0">148</div>
+            </div>
+        </div>
+
+        <!-- definisanje srednjeg quizz kontejnera-->
+        <div id="quizz-container" class="container">
+            <!-- definisanje dugmeta za pokretanje igre-->
+            <div id="startGame" class="startGame">
+                <input type="submit" value="Pokreni Kviz" id="start-game">
+            </div>
+            <!-- definisanje kontejnera sa pitanjima za kviz-->
+            <div id="question-container">
+                <!-- definisanje kontejnera sa glavnim pitanjima i finalnom slikom-->
+                <div id="main-questions">
+                    <div class="lquestion" id="question-1">1</div>
+                    <div class="lquestion" id="question-2">2</div>
+                    <div class="lquestion" id="question-3">3</div>
+                    <div class="lquestion" id="question-4">4</div>
+                    <div class="lquestion" id="question-5">5</div>
+                    <div class="lquestion" id="question-6">6</div>
+                    <div class="lquestion" id="question-7">7</div>
+                    <div class="lquestion" id="question-8">8</div>
+                    <div class="lquestion" id="question-9">9</div>
+                    <div class="lquestion" id="question-10">10</div>
+                    <div class="lquestion" id="question-11">11</div>
+                    <div class="lquestion" id="question-12">12</div>
+                    <div class="lquestion" id="question-13">13</div>
+                    <div class="lquestion" id="question-14">14</div>
+                    <div class="lquestion" id="question-15">15</div>
+                    <div class="lquestion" id="question-16">16</div>
+                </div>
+                <!-- definisanje kontejnera sa lokalnim pitanjem-->
+                <div id="local-question">
+
+                    <fieldset id="lq-form">
+                        <legend>PITANJE</legend>
+                        <div id="show-question" class="show-question">
+                            Kako se zove glavni grad Republike Srbije?
+
+                        </div>
+                        <input id="lq-response" class="lq-response" onfocus="this.value=''">
+                        <div>
+                            <input type="submit" value="Potvrdi!" id="lq-button" class="lq-button">
+
+                        </div>
+
+
+                    </fieldset>
+
+                </div>
+
+            </div>
+            <!-- definisanje kontejnera sa inputom za local score i submit dugmetom-->
+            <div id="finalScore-container">
+                <div>
+                    <input for="text" placeholder="Unesite konacan odgovor" class="inputFinal" onfocus="this.value=''"></input>
+                </div>
+                <div>
+                    <input type="submit" id="confirmButton" value="Potvrdi!" class="confirmButton">
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- definisanje kontejnera igraca br 2-->
+
+        <div id="player-1" class="container">
+            <div class="p1img">
+                <img src="./images/p1.jpg" alt="Player2" class="p1img">
+            </div>
+            <div class="score-container">
+                <div class="label-score" id="label-score1">POENI P2</div>
+                <div id="score-1" class="score-1">106</div>
+                <div class="information">
+                        <a id="information" title="Pravila igre">i</a>
+                    </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+
+
+</body>
+<script src="facesStorage.js"></script>
+<script src="questionStorage.js"></script>
+<script src="app.js"></script>
+
+</html>
