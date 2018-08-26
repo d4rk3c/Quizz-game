@@ -46,9 +46,12 @@ var UIcontroller = (function () {
 
         getValues: function () {  // uzimanje vrednosti iz inputa za lokalno i konacno pitanje
 
+            var localQ = document.querySelector(domStrings.lQInput).value;
+            var finalQ = document.querySelector(domStrings.fQinput).value
+
             return {
-                localResponse: document.querySelector(domStrings.lQInput).value,
-                finalResponse: document.querySelector(domStrings.fQinput).value
+                localResponse: localQ.toLowerCase(),
+                finalResponse: finalQ.toLowerCase()
 
             }
         },
@@ -116,7 +119,7 @@ var UIcontroller = (function () {
         },
 
         showGameRules: function(){
-            alert("PRAVILA IGRE:\n Igra se sastoji od 16 polja i slike poznate licnosti u pozadini.\nSvaki tacan odgovor na pitanje donosi 10 poena dok je tacan odgovor na konacno pitanje 100 poena.\n Prilikom davanja netacnog odgovora na konacno resenje igracu se oduzimaju 3 poena!\n Pobednik je igrac koji nakon pogadjanja konacnog odgovora bude imao vise ostvarenih poena!\nOdgovore pisati iskljucivo malim slovima\nUzivajte!")
+            alert("PRAVILA IGRE:\n Igra se sastoji od 16 polja i slike poznate licnosti u pozadini.\nSvaki tacan odgovor na pitanje donosi 10 poena dok je tacan odgovor na konacno pitanje 100 poena.\n Prilikom davanja netacnog odgovora na konacno resenje igracu se oduzimaju 3 poena!\n Pobednik je igrac koji nakon pogadjanja konacnog odgovora bude imao vise ostvarenih poena!\nUzivajte!")
 
         },
         setClearLQFieldsTrue: function(){//nakon TACNOG! odgovora LQ da se obrise pitanje i odgovor
