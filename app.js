@@ -181,7 +181,7 @@ var modelQuizz = (function (UIctrl) {
             for (i = 0; i < finalPhotos.length; i++) {
 
                 var fObjectPhoto = finalPhotos[random].loc;
-                console.log("'" + fObjectPhoto + "'");
+                console.log(fObjectPhoto);
             }
 
             var finalBacks = document.querySelector(DOMS.mainQuestions); //postavljanje background slike u final answer
