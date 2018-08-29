@@ -128,7 +128,7 @@ var UIcontroller = (function () {
         },
         setClearLQFieldsFalse: function(){//nakon NETACNOG!  odgovora LQ da se obrise pitanje i odgovor
             document.querySelector(domStrings.lQInput).value = " "
-            document.querySelector(domStrings.lQShow).textContent = "Netacan odgovor! Izaberite drugo pitanje"
+            document.querySelector(domStrings.lQShow).textContent = "Netacan odgovor!"
         },
 
         showGameOver: function () { //u trenutnku zavrsetka igre startuje se game over
