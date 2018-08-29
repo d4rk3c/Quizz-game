@@ -489,7 +489,7 @@ var controller = (function (model, UIctrl) {
 
                 //console.log("netacno")
             }
-            document.querySelector(DOM.mainQuestions).classList.remove("disable")// onemogucava se klik aktivnom igracu na drugi div
+            document.querySelector(DOM.mainQuestions).classList.remove("disable")// omogucava se klik aktivnom igracu na drugi div
             //console.log("provera LQ");
             
         }
